@@ -3,7 +3,7 @@
 Container for the primary EMUS routines.
 """
 import numpy as np
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 try:
     import usample.linalg as lm
     import usample.autocorrelation as autocorrelation
