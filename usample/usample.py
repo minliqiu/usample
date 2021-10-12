@@ -396,17 +396,11 @@ class UmbrellaSampler:
             for wi,wn in enumerate(evodd): 
             
                 wnp1 = evoddplus1[ wi ]
+                print (wnp1, self.wlist[wn], self.wlist[wn].nows)
                 
-                print ("self", self)
-                print ("self.wlist[wn]", self.wlist[wn])
-                print ("self.wlist[wn].blobs0", self.wlist[wn].blobs0)
-            
                 ii = random.randint( 0 , self.wlist[wn].nows  -1 )
                 jj = random.randint( 0 , self.wlist[wnp1].nows  -1 )
-                
-                
-                print ("self.wlist[wn].blobs0[ii]", self.wlist[wn].blobs0[ii] )
-                
+                                
                 bias_i_in_i = self.wlist[wn].blobs0[ii] 
                 bias_j_in_j = self.wlist[wnp1].blobs0[jj] 
                 
