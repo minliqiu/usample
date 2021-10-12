@@ -393,10 +393,9 @@ class UmbrellaSampler:
         
         for _ in np.arange( nrx ):
   
-            for wi,wn in enumerate(evodd): 
+            for wi,wn in enumerate(evodd):
             
                 wnp1 = evoddplus1[ wi ]
-                print (wnp1, self.wlist[wn], self.wlist[wn].nows)
                 
                 ii = random.randint( 0 , self.wlist[wn].nows  -1 )
                 jj = random.randint( 0 , self.wlist[wnp1].nows  -1 )
