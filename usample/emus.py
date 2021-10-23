@@ -259,7 +259,7 @@ def calculate_Fi(psi_i, i, Avals_i=None, return_trajs=False):
      
     psi_i = np.array(psi_i)
     denom = np.dot(psi_i,Avals_i)
-    lse = logsumexp( psi_i,b=Avals_i)
+    lse = logsumexp(psi_i, axis=0, b=Avals_i)
 
     if return_trajs:
         trajs = np.zeros(psi_i.shape)
