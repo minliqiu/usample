@@ -400,8 +400,8 @@ class UmbrellaSampler:
                 ii = random.randint( 0 , self.wlist[wn].nows  -1 )
                 jj = random.randint( 0 , self.wlist[wnp1].nows  -1 )
                                 
-                bias_i_in_i = self.wlist[wn].blobs0[ii] 
-                bias_j_in_j = self.wlist[wnp1].blobs0[jj] 
+#                 bias_i_in_i = self.wlist[wn].blobs0[ii] 
+#                 bias_j_in_j = self.wlist[wnp1].blobs0[jj] 
                 
                 pi = self.wlist[wn].lnprob0[ii] - bias_i_in_i
                 pj = self.wlist[wnp1].lnprob0[jj] - bias_j_in_j
